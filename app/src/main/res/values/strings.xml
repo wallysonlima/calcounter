@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CalCounter</string>
+    <string name="title_text">CalCounter</string>
+    <string name="hint_food">What did you eat?</string>
+    <string name="hint_calories">Calories Count</string>
+    <string name="submit_text">Submit</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="share_title">Share</string>
+    <string name="food_total_text">Total Calories:</string>
+    <string name="food_items_num">Food Items:</string>
+
 </resources>
