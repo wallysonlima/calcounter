@@ -8,5 +8,10 @@
     <string name="share_title">Share</string>
     <string name="food_total_text">Total Calories:</string>
     <string name="food_items_num">Food Items:</string>
+    <string name="food_name">Food Name</string>
+    <string name="date_text">Date Text</string>
+    <string name="name_number">120</string>
+    <string name="cal_text">Cal</string>
+    <string name="big_symbol"><![CDATA[>]]></string>
 
 </resources>
