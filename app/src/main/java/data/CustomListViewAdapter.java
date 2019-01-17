@@ -81,16 +81,7 @@ public class CustomListViewAdapter extends ArrayAdapter<Food> {
            }
         );
 
-
-
-
-
-
-
-
-
-
-        return super.getView(position, convertView, parent);
+        return row;
     }
 
 
