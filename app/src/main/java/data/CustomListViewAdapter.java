@@ -82,7 +82,7 @@ public class CustomListViewAdapter extends ArrayAdapter<Food> {
                public void onClick(View v) {
                    Intent i = new Intent(activity, FoodItemDetailsActivity.class);
                    Bundle mBundle = new Bundle();
-                   mBundle.putSerializable("UserObj", finalHolder.food);
+                   mBundle.putSerializable("userObj", finalHolder.food);
                    i.putExtras(mBundle);
 
                    activity.startActivity(i);
