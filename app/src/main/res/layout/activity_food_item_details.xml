@@ -90,6 +90,16 @@
             android:layout_gravity="center"
             android:text="@string/share_title" />
 
+        <Button
+            android:id="@+id/detsDeleteButton"
+            android:layout_width="150dp"
+            android:layout_marginTop="-150dp"
+            android:layout_marginLeft="90dp"
+            android:background="@mipmap/ic_circle_foreground"
+            android:layout_height="150dp"
+            android:layout_gravity="left"
+            android:text="DELETE" />
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
