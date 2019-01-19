@@ -2,6 +2,8 @@ package data;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,12 +13,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import model.Food;
+import wallyson.lima.calcounter.FoodItemDetailsActivity;
 import wallyson.lima.calcounter.R;
 
 public class CustomListViewAdapter extends ArrayAdapter<Food> {
     private int layoutResource;
     private Activity activity;
-    private ArrayList<Food> foodList = new ArrayList<>();
+    private ArrayList<Food> foodList;
 
     public CustomListViewAdapter(Activity act, int resource, ArrayList<Food> data) {
         super(act, resource, data);
@@ -73,10 +76,16 @@ public class CustomListViewAdapter extends ArrayAdapter<Food> {
         holder.foodDate.setText(holder.food.getRecordDate());
         holder.foodCalories.setText(String.valueOf(holder.food.getCalories()));
 
+        final ViewHolder finalHolder = holder;
         row.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View v) {
+                   Intent i = new Intent(activity, FoodItemDetailsActivity.class);
+                   Bundle mBundle = new Bundle();
+                   mBundle.putSerializable("UserObj", finalHolder.food);
+                   i.putExtras(mBundle);
 
+                   activity.startActivity(i);
                }
            }
         );
