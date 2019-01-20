@@ -25,3 +25,6 @@
 ![Display Main Activity](https://github.com/wallysonlima/calcounter/blob/master/Printscreens/DisplayFoodActivity.png)
 ![Itens Food Activity](https://github.com/wallysonlima/calcounter/blob/master/Printscreens/FoodItems.png)
 ![Display Food Activity](https://github.com/wallysonlima/calcounter/blob/master/Printscreens/DisplayFood.png)
+
+<hr>
+<h5>Tutorial from Udemy Course - The Complete Android & Java Developer Course - Build 21 App</h5>
